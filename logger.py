@@ -1,6 +1,6 @@
 import time
 
-def log(data: str, array: list) -> str:
+def log(data: str, array: list) -> None:
     local = time.localtime()
     array.append(f"[DEBUG | {time.strftime("%d.%m.%Y %H:%M:%S", local)}] {data}")
 
